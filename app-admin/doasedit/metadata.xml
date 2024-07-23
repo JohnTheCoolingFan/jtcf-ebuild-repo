@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>ivan8215145640@gmail.com</email>
+		<name>JohnTheCoolingFan</name>
+	</maintainer>
+	<longdescription>Doasedit is a shellscript to edit files with root privileges via doas while minimizing doas usage. To accomplish this, files are first copied to /tmp and made user-writable. The editor is then run in user context to edit this file. If the content was altered the changes are written back to the original file via a doas command after the editor was closed.</longdescription>
+	<upstream>
+		<remote-id type="codeberg">TotallyLeGIT/doasedit</remote-id>
+	</upstream>
+	<stabilize-allarches></stabilize-allarches>
+</pkgmetadata>
