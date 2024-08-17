@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>ivan8215145640@gmail.com</email>
+		<name>JohnTheCoolingFan</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">JohnTheCoolingFan/rfmp</remote-id>
+	</upstream>
+	<stabilize-allarches></stabilize-allarches>
+</pkgmetadata>
