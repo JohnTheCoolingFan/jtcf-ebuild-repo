@@ -22,13 +22,18 @@ jobs:
       image: ghcr.io/johnthecoolingfan/gentoo-action-image:main
 
     env:
-      NEW_PACKAGE_EBUILD: "${{ inputs.package }}-${{ inputs.version }}.ebuild"
+      PACKAGE_REF: "${{ inputs.version }}"
 
     defaults:
       run:
         shell: bash
 
     steps:
+      - name: Normalize version
+        run: |
+          echo "PACKAGE_VERSION=${PACKAGE_REF#v}" >> $GITHUB_ENV
+          echo "NEW_PACKAGE_EBUILD=${{ inputs.package }}-$PACKAGE_VERSION.ebuild" >> $GITHUB_ENV
+
       - name: Install pycargoebuild
         run: emerge app-portage/pycargoebuild
 
