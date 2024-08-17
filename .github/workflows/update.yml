@@ -32,7 +32,7 @@ jobs:
       - name: Normalize version
         run: |
           echo "PACKAGE_VERSION=${PACKAGE_REF#v}" >> $GITHUB_ENV
-          echo "NEW_PACKAGE_EBUILD=${{ inputs.package }}-$PACKAGE_VERSION.ebuild" >> $GITHUB_ENV
+          echo "NEW_PACKAGE_EBUILD=${{ inputs.package }}-${PACKAGE_REF#v}.ebuild" >> $GITHUB_ENV
 
       - name: Install pycargoebuild
         run: emerge app-portage/pycargoebuild
