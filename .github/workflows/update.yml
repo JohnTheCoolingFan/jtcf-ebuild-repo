@@ -69,6 +69,8 @@ jobs:
       - name: Commit repository changes
         working-directory: ./repo
         run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
           git add .
           pkgdev commit -m "games-misc/${{ inputs.package }}: add ${{ inputs.version }}"
 
