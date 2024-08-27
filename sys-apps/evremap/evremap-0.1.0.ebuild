@@ -76,6 +76,7 @@ SRC_URI="
 
 DEPEND="
 	acct-group/input
+	dev-libs/libevdev
 "
 
 LICENSE="MIT"
