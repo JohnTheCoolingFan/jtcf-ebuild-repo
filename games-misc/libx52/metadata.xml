@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM 'https://www.gentoo.org/dtd/metadata.dtd'>
+<pkgmetadata>
+	<maintainer type="person">
+		<email>ivan8215145640@gmail.com</email>
+		<name>JohnTheCoolingFan</name>
+	</maintainer>
+	<longdescription>This project adds a new driver for the Saitek/MadCatz X52 Pro flight control system. The X52 pro is a HOTAS (hand on throttle and stick) with 7 axes, 39 buttons, 1 hat and 1 thumbstick and a multi-function display which is programmable.</longdescription>
+	<upstream>
+		<remote-id type="github">nirenjan/libx52</remote-id>
+	</upstream>
+	<stabilize-allarches></stabilize-allarches>
+</pkgmetadata>
