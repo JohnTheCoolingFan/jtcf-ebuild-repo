@@ -74,6 +74,9 @@ SRC_URI="
 	${CARGO_CRATE_URIS}
 "
 
+BDEPEND="
+	virtual/pkgconfig
+"
 DEPEND="
 	acct-group/input
 	dev-libs/libevdev
