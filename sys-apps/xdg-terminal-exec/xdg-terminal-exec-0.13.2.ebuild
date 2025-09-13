@@ -1,4 +1,4 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 2025 JohnTheCoolingFan
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
