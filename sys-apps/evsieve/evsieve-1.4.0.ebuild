@@ -20,7 +20,7 @@ SRC_URI="
 	${CARGO_CRATE_URIS}
 "
 
-LICENSE="GPL-2.0-only GPL-2+ MIT"
+LICENSE="GPL-2+ MIT"
 # Dependent crate licenses
 LICENSE+=" || ( Apache-2.0 MIT )"
 SLOT="0"
