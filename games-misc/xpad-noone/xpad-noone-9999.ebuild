@@ -16,6 +16,11 @@ SLOT="0"
 CONFIG_CHECK="SND CFG80211 INPUT_FF_MEMLESS USB POWER_SUPPLY LEDS_CLASS HID"
 MODULES_KERNEL_MIN=5.13
 
+src_prepare() {
+	cp "${FILESDIR}/Makefile" "${S}" || die
+	default
+}
+
 src_compile() {
 	local modlist=(
 		xpad-noone=/extra
