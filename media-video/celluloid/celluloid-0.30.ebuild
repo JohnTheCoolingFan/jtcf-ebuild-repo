@@ -15,11 +15,12 @@ KEYWORDS="~amd64 ~arm64 ~ppc ~ppc64"
 
 RDEPEND=">=dev-libs/glib-2.68:2
 	>=gui-libs/gtk-4.16:4
-	>=gui-libs/libadwaita-1.6.0:1
+	>=gui-libs/libadwaita-1.8.0:1
 	>=media-video/mpv-0.32:=[libmpv]
+	x11-libs/gdk-pixbuf
 	media-libs/libepoxy"
 DEPEND="${RDEPEND}"
-BDEPEND="dev-libs/appstream-glib
+BDEPEND="dev-libs/appstream
 	dev-util/gdbus-codegen
 	dev-util/glib-utils
 	>=sys-devel/gettext-0.19.8
