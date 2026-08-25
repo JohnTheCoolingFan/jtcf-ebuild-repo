@@ -1,0 +1,14 @@
+BDEPEND=dev-libs/openssl
+DEFINED_PHASES=compile install postinst
+DESCRIPTION=Russian government root CA, restricted to russian TLDs
+EAPI=8
+IDEPEND=ssl? ( dev-libs/openssl )
+INHERIT=ssl-cert
+IUSE=ssl
+KEYWORDS=~amd64 ~x86 ~alpha ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~sparc
+LICENSE=MIT
+RDEPEND=ssl? ( dev-libs/openssl )
+SLOT=0
+SRC_URI=https://gu-st.ru/content/lending/linux_russian_trusted_root_ca_pem.zip https://gu-st.ru/content/lending/russian_trusted_sub_ca_pem.zip
+_eclasses_=edo	a5e294016aa84979fcb2459749eb80b2	ssl-cert	89fbacafccd672dde4fd51b8e313bf02
+_md5_=a218e15506866bb11903d3dda7b32dc2
